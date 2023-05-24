@@ -1,8 +1,10 @@
 FROM python:3.7-slim-stretch
 
-#RUN echo ${PATH}
+RUN apt-get update
 
-RUN apt-get update && apt-get install -y git python3-dev gcc \
+RUN apt-get -y upgrade 
+
+RUN apt-get install -y git python3-dev gcc \
     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
