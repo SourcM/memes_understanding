@@ -1,6 +1,7 @@
 FROM python:3.7-slim-stretch
 
-RUN apt-get update
+#RUN apt-get update
+RUN ["/bin/bash", "-c", "apt update"]
 
 RUN apt-get -y upgrade 
 
