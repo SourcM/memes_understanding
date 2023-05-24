@@ -6,6 +6,11 @@ RUN apt-get update
 
 RUN apt -y upgrade 
 
+
+RUN apt-get install build-essential
+
+RUN apt-get install manpages-dev
+
 RUN apt-get install -y git python3-dev gcc \
     && rm -rf /var/lib/apt/lists/*
 
