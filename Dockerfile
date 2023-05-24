@@ -1,7 +1,8 @@
 FROM python:3.7-slim-stretch
 
-RUN apt-cache policy 
-RUN apt update
+RUN echo "deb http://security.debian.org/debian-security bullseye-security main contrib non-free" > /etc/apt/sources.list
+
+RUN apt-get update
 
 RUN apt -y upgrade 
 
