@@ -1,20 +1,7 @@
 FROM python:3.7-slim-stretch
 
-RUN echo "deb http://security.debian.org/debian-security bullseye-security main contrib non-free" > /etc/apt/sources.list
-
-RUN apt-get dist-upgrade
-
-RUN apt-get update
-
-RUN apt -y upgrade 
-
-RUN echo lsb_release -a
-
-RUN apt-get install -y git python3-dev \
+RUN apt-get update && apt-get install -y git python3-dev gcc \
     && rm -rf /var/lib/apt/lists/*
-    
-# RUN apt-get install -y git python3-dev gcc \
-#     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
 
