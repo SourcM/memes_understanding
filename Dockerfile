@@ -10,12 +10,13 @@ RUN apt -y upgrade
 
 RUN echo lsb_release -a
 
-RUN apt-get install gcc-7 gcc-8
-
 RUN apt-get install manpages-dev
 
-RUN apt-get install -y git python3-dev gcc \
+RUN apt-get install -y git python3-dev \
     && rm -rf /var/lib/apt/lists/*
+    
+# RUN apt-get install -y git python3-dev gcc \
+#     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
 
