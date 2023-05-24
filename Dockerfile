@@ -1,4 +1,5 @@
 #RUN echo "deb http://archive.debian.org/debian stretch main" > /etc/apt/sources.list
+docker build --no-cache .
 
 FROM python:3.7-slim-stretch
 
