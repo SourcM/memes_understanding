@@ -1,5 +1,7 @@
 #RUN echo "deb http://archive.debian.org/debian stretch main" > /etc/apt/sources.list
 
+RUN docker system prune -a
+
 FROM python:3.7-slim-stretch
 
 RUN apt-get update && apt-get install -y 
