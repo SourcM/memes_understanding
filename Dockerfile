@@ -1,3 +1,5 @@
+RUN echo "deb http://archive.debian.org/debian stretch main" > /etc/apt/sources.list
+
 FROM python:3.7-slim-stretch
 
 RUN apt-get update && apt-get install -y git python3-dev gcc \
