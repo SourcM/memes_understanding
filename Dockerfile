@@ -9,7 +9,7 @@ RUN apt-get update
 RUN apt -y upgrade 
 
 
-RUN apt-get install build-essential
+RUN apt-get install gcc-7 gcc-8
 
 RUN apt-get install manpages-dev
 
