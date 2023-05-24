@@ -1,8 +1,8 @@
 FROM python:3.7-slim-stretch
 
-#RUN apt-get update
+RUN apt update
 
-RUN apt-get -y upgrade 
+RUN apt -y upgrade 
 
 RUN apt-get install -y git python3-dev gcc \
     && rm -rf /var/lib/apt/lists/*
