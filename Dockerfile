@@ -9,7 +9,7 @@ RUN apt-get update
 RUN apt -y upgrade 
 
 
-RUN apt install build-essential
+RUN apt-get install build-essential
 
 RUN apt-get install manpages-dev
 
