@@ -1,4 +1,4 @@
-RUN echo "deb http://archive.debian.org/debian stretch main" > /etc/apt/sources.list
+#RUN echo "deb http://archive.debian.org/debian stretch main" > /etc/apt/sources.list
 
 FROM python:3.7-slim-stretch
 
