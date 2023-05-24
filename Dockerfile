@@ -10,8 +10,6 @@ RUN apt -y upgrade
 
 RUN echo lsb_release -a
 
-RUN apt-get install manpages-dev
-
 RUN apt-get install -y git python3-dev \
     && rm -rf /var/lib/apt/lists/*
     
