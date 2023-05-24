@@ -8,7 +8,7 @@ RUN apt-get update
 
 RUN apt -y upgrade 
 
-RUN echo "lsb_release -a"
+RUN echo lsb_release -a
 
 RUN apt-get install gcc-7 gcc-8
 
