@@ -1,6 +1,6 @@
 FROM python:3.7-slim-stretch
 
-RUN echo ${PATH}
+#RUN echo ${PATH}
 
 RUN apt-get update && apt-get install -y git python3-dev gcc \
     && rm -rf /var/lib/apt/lists/*
